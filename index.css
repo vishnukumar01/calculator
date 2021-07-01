@@ -1,0 +1,18 @@
+table{
+	background-color:rgb(0,0,0);
+    border:5px solid green;
+}
+th{
+	color:red;
+}
+td{
+	color:blue;
+}
+button{
+	background-color:yellow;
+	color:black;
+	border:2px solid dotted;
+}
+.a{
+	background-color:white;
+}

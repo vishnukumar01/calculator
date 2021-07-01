@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	<h3 align='center'>CUTTOFF CALCULATOR(12th)</h3>
+<table align="center">
+	<tr align="center">
+		<th >physics</th>
+		<th >chemistry</th>
+		<th >maths</th>
+	</tr>
+
+<tr>
+	<td><input id='a' type="number" name="name"></td>
+<td><input id='b' type="number" name="name"></td>
+<td><input id='c' type="number" name="name"></td>
+</tr>
+<tr>
+<td></td>
+<td align='center'><button align='center' class='btn-btn-primary' onclick="fun()"><b><i>click me </i></b></button></td>
+</tr>
+<tr align="center">
+	<td><b><i>ANSWER IS </i></b></td>
+	
+	<td id='n' class='a' align="center">~~</td>
+     
+</tr>
+</table>
+<script type="text/javascript">
+	var x;
+	function fun(){
+	var i=parseInt(document.getElementById('a').value);
+	var j=parseInt(document.getElementById('b').value);
+	var k=parseInt(document.getElementById('c').value);
+	var x=document.createElement('p');
+    if(i<35 || j<35 || k<35) document.getElementById('n').innerHTML='<b><i>'+'not eligible'+'</b></i>';
+	else{var q=(i+j)/2+k;
+	var node=document.createTextNode('this is'+q);
+    document.getElementById('n').innerHTML='<i><b>'+q+'/200</i></b>';
+         }
+    //appendChild(node);
+}
+</script>
+</body>
+</html>
